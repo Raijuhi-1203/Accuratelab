@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="digitalbull.app.accuratelab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AccurateLab">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="digitalbull.app.accuratelab.LoginPage" />
+        <activity android:name="digitalbull.app.accuratelab.Register" />
+        <activity android:name="digitalbull.app.accuratelab.Dashboard" />
+        <activity android:name="digitalbull.app.accuratelab.Category" />
+        <activity android:name="digitalbull.app.accuratelab.Packagess" />
+        <activity android:name="digitalbull.app.accuratelab.Profile" />
+        <activity android:name="digitalbull.app.accuratelab.MenuOption" />
+        <activity android:name="digitalbull.app.accuratelab.AddressUser" />
+        <activity android:name="digitalbull.app.accuratelab.ProfileUpdate" />
+        <activity android:name="digitalbull.app.accuratelab.Term" />
+        <activity android:name="digitalbull.app.accuratelab.Prescription" />
+        <activity android:name="digitalbull.app.accuratelab.Contact" />
+        <activity android:name="digitalbull.app.accuratelab.About" />
+        <activity android:name="digitalbull.app.accuratelab.Privacy" />
+        <activity android:name=".AddAddress" />
+        <activity android:name=".PageProduct" />
+        <activity android:name=".PageProductDetails" />
+        <activity android:name=".CartPage" />
+        <activity android:name=".UpdateAddress" />
+        <activity android:name=".AddressBook" />
+        <activity android:name=".PageSuccefull" />
+        <activity android:name=".Page_CheckOut" />
+        <activity android:name=".PageOrder" />
+        <activity android:name=".OrderProductDetails" />
+        <activity android:name=".CancelOrderForm" />
+        <activity android:name=".CancelMessage" />
+        <activity android:name=".PageAddress" />
+    </application>
+
+</manifest>
