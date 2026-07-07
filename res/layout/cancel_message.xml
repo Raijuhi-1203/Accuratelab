@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:src="@drawable/successful" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:text="Appoinment has been cancelled\n Successfully."
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="16dp" />
+
+    <TextView
+        android:text="you'll receive a SMS, your appoinment is \n cancelled."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_weight="1"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:textSize="14dp"
+            android:text="Back To Home"
+            android:textAllCaps="false"
+            android:background="@drawable/round_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

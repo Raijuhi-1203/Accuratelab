@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.Grocery.CancelOrderForm"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/btback"
+                android:padding="5dp"
+                android:layout_gravity="start"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_arrow_back_24"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accurate Lab"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Reason *"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:background="@drawable/trbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spnr"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Description *"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:id="@+id/reason"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/custom_font"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

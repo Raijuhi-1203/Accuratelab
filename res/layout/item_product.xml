@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/click_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/product_box"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/prdimg"
+                android:adjustViewBounds="true"
+                android:padding="2dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerInside"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/prdnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:maxLength="26"
+                android:fontFamily="@font/custom_font"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:fontFamily="@font/custom_font"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:id="@+id/offmrp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/green"-->
+<!--                    android:textSize="13dp"-->
+<!--                    android:textStyle="bold" />-->
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/mrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btncart"
+                android:padding="8dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/custom_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_button"
+                android:text="Book Now"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

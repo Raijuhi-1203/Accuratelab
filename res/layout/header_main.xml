@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="45dp">
+
+    <ImageView
+        android:id="@+id/btback"
+        android:padding="5dp"
+        android:layout_gravity="start"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accurate Lab"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

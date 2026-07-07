@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        card_view:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/prdimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/blood"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Text Content -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prdnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CBC "
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/mrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 150"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

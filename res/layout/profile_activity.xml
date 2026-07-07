@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/btback"
+                android:padding="5dp"
+                android:layout_gravity="start"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_arrow_back_24"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accurate Lab"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="Hello"
+                                android:textAlignment="center"
+                                android:textColorHint="@color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:id="@+id/txname"
+                                android:text="Ramesh Shah"
+                                android:textAlignment="center"
+                                android:textColorHint="@color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textColor="@color/black"
+                                android:id="@+id/txmob"
+                                android:text="+91-9999999999"
+                                android:textAlignment="center"
+                                android:textColorHint="@color/black"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_update"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/round_button"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Edit Profile"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:layout_weight="1"
+                                    android:id="@+id/btn_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="Address"
+                                    android:textSize="16dp"
+                                    android:textAllCaps="false"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textColor="@color/white"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/round_button_blue" />
+
+
+                                <Button
+                                    android:id="@+id/btn_menu"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/round_button_black"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Menu"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:elevation="12dp"
+                                    android:id="@+id/order"
+                                    android:focusable="true"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="8dp">
+
+                                    <LinearLayout
+                                        android:background="@color/skyblue"
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Done Report"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/black"
+                                            android:textSize="14dp"
+                                            android:layout_marginBottom="5dp"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="0"
+                                            android:textAllCaps="false"
+                                            android:id="@+id/txtotalorderno"
+                                            android:textColor="@color/black"
+                                            android:textSize="22dp"
+                                            android:layout_marginBottom="5dp"
+                                            />
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:padding="3dp"
+                                    android:id="@+id/carts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:elevation="12dp"
+                                    android:focusable="true"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="8dp">
+
+                                    <LinearLayout
+                                        android:background="@color/light_green"
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Pending Report"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/black"
+                                            android:textSize="14dp"
+                                            android:layout_marginBottom="5dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="0"
+                                            android:id="@+id/txtotalcartno"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/black"
+                                            android:textSize="22dp"
+                                            android:layout_marginBottom="5dp" />
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/banner"/>
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
